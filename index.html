@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Calculator </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<div class="layout">
+<form name="calculator">
+<div class="inputBox">
+<input class="textInput" type="text" id="display" name="display">
+
+<br>
+</div>
+<div class="buttonBox">
+
+<table cellspacing="10px">
+<tr>
+<td> <input style="background-color:rgb(190, 190, 190); color: black;" id="AC" class="button"
+type="button" value="AC" onclick="calculator.display.value = ''"> </td>
+
+<td> <input style="background-color:rgb(190, 190, 190); color: black;" id="arrow" class="button"
+type="button" value="&#8592"></td>
+<td> <input style="background-color:rgb(190, 190, 190); color: black;" id="perc" class="button"
+type="button" value="%" onclick="calculator.display.value += '%'"> </td>
+<td> <input id="div" class="button" type="button" value="/"
+onclick="calculator.display.value +='/'" style="background-color:rgb(245, 161, 4);">
+</td>
+
+</tr>
+<tr>
+<td> <input id="pow" class="button" type="button" value="^"
+onclick="calculator.display.value +='^' "> </td>
+<td> <input id="sqrt" class="button" type="button" value="sqrt"
+onclick="calculator.display.value += 'sqrt' "> </td>
+<td> <input id="mul" class="button" type="button" value="*"
+onclick="calculator.display.value += '*'"> </td>
+<td> <input id="sub" class="button" type="button" value="-"
+onclick="calculator.display.value +='-'" style="background-color:rgb(245, 161, 4)">
+</td>
+</tr>
+<tr>
+<td> <input id="seven" class="button" type="button" value="7"
+onclick="calculator.display.value +='7'"> </td>
+<td> <input id="eight" class="button" type="button" value="8"
+onclick="calculator.display.value +='8'"> </td>
+<td> <input id="nine" class="button" type="button" value="9"
+onclick="calculator.display.value +='9'"> </td>
+<td> <input id="add" class="button" type="button" value="+"
+onclick="calculator.display.value +='+'" style="background-color:rgb(245, 161, 4)">
+</td>
+</tr>
+<tr>
+<td> <input id="four" class="button" type="button" value="4"
+onclick="calculator.display.value +='4'"> </td>
+<td> <input id="five" class="button" type="button" value="5"
+onclick="calculator.display.value +='5'"> </td>
+<td> <input id="six" class="button" type="button" value="6"
+onclick="calculator.display.value +='6'"> </td>
+<td> <input id="round" class="button" type="button" value="round"
+onclick="calculator.display.value ='round'" style="background-color:rgb(245, 161, 4)">
+</td>
+</tr>
+<tr>
+<td> <input id="one" class="button" type="button" value="1"
+onclick="calculator.display.value +='1'"> </td>
+<td> <input id="two" class="button" type="button" value="2"
+onclick="calculator.display.value +='2'"> </td>
+<td> <input id="three" class="button" type="button" value="3"
+onclick="calculator.display.value +='3'"> </td>
+<td> <input id="recip" class="button" type="button" value="1/x"
+onclick="calculator.display.value +='1/x'  " style="background-color:rgb(245, 161, 4)">
+</td>
+</tr>
+<tr>
+<td colspan="2"> <input id="zero" class="button" type="button" value="0"
+onclick="calculator.display.value +='0'" style="width: 144px"> </td>
+<td> <input id="dot" class="button" type="button" value="."
+onclick="calculator.display.value +='.'"> </td>
+<td> <input id="equal" class="button" type="button" value="="
+onclick="calculator.display.value = eval(calculator.display.value)"
+style="background-color:rgb(245, 161, 4)"></td>
+</tr>
+</table>
+</div>
+</form>
+</div>
+
+</body>
+
+</html>
